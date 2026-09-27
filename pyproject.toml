@@ -1,7 +1,7 @@
 [project]
-name = "6-multi-ai-agent"
+name = "agentic-chatbot-using-langgraph"
 version = "0.1.0"
-description = "Multi-Agent AI project using LangChain and LangGraph"
+description = "Agentic chatbot using LangGraph, LangChain, tools, and RAG"
 readme = "README.md"
 requires-python = ">=3.12"
 
