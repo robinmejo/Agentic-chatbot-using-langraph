@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Agentic Chatbot - Project Specific
+# ============================================================
+
+# Environment variables
+.env
+.env.*
+
+# SQLite database
+*.db
+*.db-shm
+*.db-wal
+
+# Chroma vector database
+chroma_db/
+
+# Python virtual environment
+.venv/
