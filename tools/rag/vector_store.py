@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 from langchain_chroma import Chroma
@@ -11,22 +10,7 @@ from langchain_openai import OpenAIEmbeddings
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
-# Render:
-# DATA_DIR=/var/data
-#
-# Local:
-# DATA_DIR is not set → use BASE_DIR
-
-DATA_DIR = Path(
-    os.getenv("DATA_DIR", BASE_DIR)
-)
-
-DATA_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
-
-CHROMA_DIR = DATA_DIR / "chroma_db"
+CHROMA_DIR = BASE_DIR / "chroma_db"
 
 
 # ------------------------------------------------------------
